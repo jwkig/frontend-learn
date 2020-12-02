@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "echo \"Pretest\" && exit 0",
-    "build": "webpack --watch"
+    "build": "webpack --watch",
+    "eslint": "eslint . --ext .ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
     "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^7.14.0",
     "typescript": "^4.0.2"
   }
 }
