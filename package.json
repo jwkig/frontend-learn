@@ -7,14 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "echo \"Pretest\" && exit 0",
     "build": "webpack --watch",
-    "precommit": "echo \"Commiting...\" && exit 1"
+    "precommit": "echo \"Commiting...\" && exit 1",
+    "eslint": "eslint . --ext .ts"
   },
   "precommit": {
     "tasks": [
       "npm run precommit"
     ]
-    "build": "webpack --watch",
-    "eslint": "eslint . --ext .ts"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +22,6 @@
     "@typescript-eslint/parser": "^4.9.0",
     "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.14.0",
-    "typescript": "^4.0.2"
     "typescript": "^4.0.2",
     "precommit": "1.2.2"
   }
